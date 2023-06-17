@@ -1,0 +1,59 @@
+.container {
+    width: 400px;
+    height: 510px;
+    margin: 7.5rem auto;
+    padding: .1em .3em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.586);
+}
+
+input {
+    color: black;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    font: 17.8px "Fira Code";
+    font-weight: 900;
+    border-radius: 50%;
+    margin: .1em;
+    width: 4em;
+    height: 4em;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid rgb(7, 203, 252);
+    opacity: 60%;
+}
+
+#display {
+    font: 40px "Fira Code";
+    background-color: rgb(17, 234, 114);
+    display: block;
+    border-radius: .1em;
+    width: 98%;
+    height: 20%;
+    margin: .3em auto;
+    border: none;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    cursor: text;
+}
+
+#display:focus {
+    outline: none;
+    opacity: 85%;
+}
+
+.red {
+    background-color: rgb(255, 170, 0);
+    color: white;
+}
+
+.green {
+    background-color: rgb(17, 234, 114);
+    color: white;
+    border-radius: 2%;
+    width: 8.2em;
+    height: 3.8em;
+}
