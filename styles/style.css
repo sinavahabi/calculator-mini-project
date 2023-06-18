@@ -6,6 +6,7 @@
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(16, 16, 16, 0.586);
+    cursor: default;
 }
 
 input {
@@ -29,7 +30,7 @@ input:focus {
 
 #display {
     font: 40px "Fira Code";
-    background-color: rgb(17, 234, 114);
+    background-color: rgb(0, 247, 148);
     display: block;
     border-radius: .1em;
     width: 98%;
@@ -43,6 +44,11 @@ input:focus {
 #display:focus {
     outline: none;
     opacity: 85%;
+    border-bottom: 2px solid rgb(46, 46, 46);
+}
+
+#display::selection {
+    background-color: rgb(226, 43, 43);
 }
 
 .red {
@@ -51,9 +57,9 @@ input:focus {
 }
 
 .green {
-    background-color: rgb(17, 234, 114);
+    background-color: rgb(0, 247, 148);
     color: white;
-    border-radius: 2%;
+    border-radius: 5%;
     width: 8.2em;
     height: 3.8em;
 }

@@ -13,43 +13,42 @@
 
 <body>
     <div class="container">
-        <input type="text" placeholder="0" id="display">
+        <input type="text" placeholder="0" id="display" readonly>
         <div class="row">
-            <input type="button" value="C" name="clear" class="red">
-            <input type="button" value="del" name="delete">
-            <input type="button" value="rnd" name="round">
-            <input type="button" value="fl" name="floor">
-            <input type="button" value="ce" name="ceil">
+            <input class="red" type="button" value="C" onclick="reset()">
+            <input type="button" value="del" onclick="backspace()">
+            <input type="button" value="rnd" onclick="mathCalculation('round')">
+            <input type="button" value="fl" onclick="mathCalculation('floor')">
+            <input type="button" value="ce" onclick="mathCalculation('ceil')">
         </div>
         <div class="row">
-            <input type="button" value="9" name="b9">
-            <input type="button" value="8" name="b8">
-            <input type="button" value="7" name="b7">
-            <input type="button" value="+" name="plus">
-            <input type="button" value="√" name="root">
+            <input type="button" value="9" onclick="add(event)">
+            <input type="button" value="8" onclick="add(event)">
+            <input type="button" value="7" onclick="add(event)">
+            <input type="button" value="+" onclick="add(event)">
+            <input type="button" value="√" onclick="mathCalculation('sqrt')">
         </div>
         <div class="row">
-            <input type="button" value="6" name="b6">
-            <input type="button" value="5" name="b5">
-            <input type="button" value="4" name="b4">
-            <input type="button" value="-" name="minus">
-            <input type="button" value="|X|" name="absolute">
+            <input type="button" value="6" onclick="add(event)">
+            <input type="button" value="5" onclick="add(event)">
+            <input type="button" value="4" onclick="add(event)">
+            <input type="button" value="-" onclick="add(event)">
+            <input type="button" value="|X|" onclick="mathCalculation('abs')">
         </div>
         <div class="row">
-            <input type="button" value="3" name="b3">
-            <input type="button" value="2" name="b2">
-            <input type="button" value="1" name="b1">
-            <input type="button" value="*" name="asterisk">
-            <input type="button" value="^" name="pow">
+            <input type="button" value="3" onclick="add(event)">
+            <input type="button" value="2" onclick="add(event)">
+            <input type="button" value="1" onclick="add(event)">
+            <input type="button" value="*" onclick="add(event)">
+            <input type="button" value="^" onclick="mathCalculation('pow')">
         </div>
         <div class="row">
-            <input type="button" value="0" name="b0">
-            <input type="button" value="." name="dot">
-            <input type="button" value="/" name="division">
-            <input type="button" value="=" name="equal" class="green">
+            <input type="button" value="0" onclick="add(event)">
+            <input type="button" value="." onclick="add(event)">
+            <input type="button" value="/" onclick="add(event)">
+            <input class="green" type="button" value="=" onclick="calculation()">
         </div>
     </div>
-    <script></script>
 </body>
 
 </html>
