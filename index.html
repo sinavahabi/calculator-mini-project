@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="main.js"></script>
 </head>
 
 <body>
+    <div id="clock" class="display-clock"></div>
+    <div id="date" class="display-date"></div>
     <div class="container">
         <input type="text" placeholder="0" id="display" readonly>
         <div class="row">
@@ -49,6 +48,7 @@
             <input class="green" type="button" value="=" onclick="calculation()">
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

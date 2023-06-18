@@ -72,3 +72,40 @@ function mathCalculation(mathFunc) {
         }
     }
 }
+
+// Adding digital clock feature to program.
+
+function clock(){
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+    let time = "AM";
+    let dateString = String(date);
+
+    if(hour > 12) {
+        hour -= 12;
+        time = "PM";
+    }
+
+    if(hour < 10) {
+        hour = "0" + hour;
+    }
+
+    if(minute < 10) {
+        minute = "0" + minute;
+    }
+
+    if(second < 10) {
+        second = "0" + second;
+    }
+
+    let timeDisplay = `${hour}:${minute}:${second} ${time}`;
+    let dateDisplay = dateString.slice(0,15);
+    document.getElementById("clock").textContent = timeDisplay;
+    document.getElementById("date").textContent = dateDisplay;
+
+    setTimeout(clock, 1000);
+}
+
+clock();

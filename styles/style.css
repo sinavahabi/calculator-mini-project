@@ -1,7 +1,7 @@
 .container {
     width: 400px;
     height: 510px;
-    margin: 7.5rem auto;
+    margin: 5.5rem auto;
     padding: .1em .3em;
     border-radius: 10px;
     box-sizing: border-box;
@@ -62,4 +62,10 @@ input:focus {
     border-radius: 5%;
     width: 8.2em;
     height: 3.8em;
+}
+
+.display-clock, .display-date {
+    text-align: center;
+    font: 2em Calibri;
+    color: rgb(40, 185, 242);
 }
