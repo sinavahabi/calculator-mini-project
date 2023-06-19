@@ -9,3 +9,4 @@ Here we have a basic web application calculator which has some Math methods such
 In this program, some “undefined” and “NaN” errors are somehow handled by JavaScript alerts or setting the calculators display empty (0); that is all done by using basic conditional statements.
 There is also a digital clock feature which has been added by using nested setTimeout which gives the user exact momentary date and time.
 Note: This mini project was completely handled by git.
+Note: Codes documentation and descriptions are more obvious in comments among the codes on each file.
