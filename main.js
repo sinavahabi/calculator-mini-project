@@ -4,7 +4,6 @@
     Copyright: 2023/06
 */
 
-
 "use strict";
 
 // Defining "power" variable to check some conditions.

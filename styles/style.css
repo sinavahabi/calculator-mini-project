@@ -1,7 +1,7 @@
 .container {
-    width: 400px;
-    height: 510px;
-    margin: 5.5rem auto;
+    width: 550px;
+    height: 715px;
+    margin: 4.5rem auto;
     padding: .1em .3em;
     border-radius: 10px;
     box-sizing: border-box;
@@ -13,12 +13,12 @@ input {
     color: black;
     background-color: rgb(220, 220, 220);
     border: none;
-    font: 17.8px "Fira Code";
+    font: 20px "Fira Code";
     font-weight: 900;
     border-radius: 50%;
     margin: .1em;
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -28,7 +28,7 @@ input:focus {
 }
 
 #display {
-    font: 40px "Fira Code";
+    font: 50px "Fira Code";
     background-color: rgb(0, 247, 148);
     display: block;
     border-radius: .1em;
@@ -43,15 +43,15 @@ input:focus {
 #display:focus {
     outline: none;
     opacity: 85%;
-    border-bottom: 2px solid rgb(46, 46, 46);
+    border-bottom: 3px solid rgb(46, 46, 46);
 }
 
 #display::selection {
-    background-color: rgb(226, 43, 43);
+    background-color: rgb(212, 254, 0);
 }
 
 .red {
-    background-color: rgb(255, 170, 0);
+    background-color: rgb(255, 98, 0);
     color: white;
 }
 
@@ -59,8 +59,9 @@ input:focus {
     background-color: rgb(0, 247, 148);
     color: white;
     border-radius: 5px;
-    width: 8.2em;
-    height: 3.8em;
+    width: 5em;
+    height: 2.3em;
+    font-size: 40px;
 }
 
 .green:focus {
@@ -69,7 +70,7 @@ input:focus {
 
 .display-clock, .display-date {
     text-align: center;
-    font: 2em Calibri;
+    font: 2.5em Calibri;
     color: rgb(40, 185, 242);
     font-weight: bold;
 }
@@ -77,4 +78,84 @@ input:focus {
 .display-clock::selection, .display-date::selection {
     background-color: darkcyan;
     color: white;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 450px;
+        height: 580px;
+        margin: 5.5rem auto;
+    }
+
+    input {
+        font: 18.6px "Fira Code";
+        width: 4.35em;
+        height: 4.35em;
+    }
+
+    #display {
+        font: 45px "Fira Code";
+    }
+
+    #display:focus {
+        border-bottom: 2.5px solid rgb(46, 46, 46);
+    }
+
+    #display::selection {
+        background-color: rgb(43, 180, 226);
+    }
+
+    .green {
+        width: 4.65em;
+        height: 2em;
+        font-size: 35px;
+    }
+
+    .display-clock, .display-date {
+        font: 2.25em Calibri;
+    }
+
+    .display-clock::selection, .display-date::selection {
+        background-color: rgb(202, 5, 176);
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 400px;
+        height: 505px;
+        margin: 5.5rem auto;
+    }
+
+    input {
+        font: 17.8px "Fira Code";
+        width: 4em;
+        height: 4em;
+    }
+
+    #display {
+        font: 40px "Fira Code";
+    }
+
+    #display:focus {
+        border-bottom: 2px solid rgb(46, 46, 46);
+    }
+
+    #display::selection {
+        background-color: rgb(226, 43, 43);
+    }
+
+    .green {
+        width: 5em;
+        height: 2.2em;
+        font-size: 28px;
+    }
+
+    .display-clock, .display-date {
+        font: 2em Calibri;
+    }
+
+    .display-clock::selection, .display-date::selection {
+        background-color: rgb(5, 202, 58);
+    }
 }
