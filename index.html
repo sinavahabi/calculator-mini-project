@@ -9,13 +9,19 @@
 </head>
 
 <body>
-    <div id="clock" class="display-clock"></div>
-    <div id="date" class="display-date"></div>
+
+    <div class="help" title="more information about this page">
+        <button class="help">
+            <a class="help" href="help.html" target="_blank">Need help?</a>
+        </button>
+    </div>
+    <div id="clock" class="display-clock" title="time"></div>
+    <div id="date" class="display-date" title="date"></div>
     <div class="container">
-        <input type="text" placeholder="0" id="display" readonly>
+        <input type="text" placeholder="0" id="display" readonly title="calculator">
         <div class="row">
-            <input class="red" type="button" value="C" onclick="reset()">
-            <input class="buttons" type="button" value="del" onclick="backspace()">
+            <input class="red" type="button" value="C" title="clear" onclick="reset()">
+            <input class="buttons" type="button" value="del" title="delete" onclick="backspace()">
             <input class="buttons" type="button" value="rnd" onclick="mathCalculation('round')">
             <input class="buttons" type="button" value="fl" onclick="mathCalculation('floor')">
             <input class="buttons" type="button" value="ce" onclick="mathCalculation('ceil')">
@@ -49,6 +55,7 @@
         </div>
     </div>
     <script src="main.js"></script>
+
 </body>
 
 </html>

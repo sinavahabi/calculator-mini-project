@@ -1,6 +1,33 @@
+div.help {
+    float: left;
+    border: 0;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+div.help:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255, 179, 0);
+    background-color: white;
+    color: black;
+}
+
+button.help {
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+a.help {
+    font: 1.5em Arial;
+    text-decoration: none;
+    color: black;
+}
+
+
 .container {
-    width: 550px;
-    height: 715px;
+    width: 500px;
+    height: 640px;
     margin: 4.5rem auto;
     padding: .1em .3em;
     border-radius: 10px;
@@ -17,8 +44,8 @@ input {
     font-weight: 900;
     border-radius: 50%;
     margin: .1em;
-    width: 5em;
-    height: 5em;
+    width: 4.5em;
+    height: 4.5em;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -59,13 +86,17 @@ input:focus {
     background-color: rgb(0, 247, 148);
     color: white;
     border-radius: 5px;
-    width: 5em;
-    height: 2.3em;
+    width: 4.4em;
+    height: 1.9em;
     font-size: 40px;
 }
 
 .green:focus {
     border: 1px solid rgb(0, 0, 0);
+}
+
+.display-clock {
+    margin-right: 6.9rem;
 }
 
 .display-clock, .display-date {
@@ -118,6 +149,10 @@ input:focus {
     .display-clock::selection, .display-date::selection {
         background-color: rgb(202, 5, 176);
     }
+
+    a.help {
+        font: 1.2em Arial;
+    }
 }
 
 @media (max-width: 576px) {
@@ -157,5 +192,10 @@ input:focus {
 
     .display-clock::selection, .display-date::selection {
         background-color: rgb(5, 202, 58);
+    }
+
+    a.help {
+        font: 1em Arial;
+        text-decoration: underline;
     }
 }

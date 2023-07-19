@@ -1,8 +1,8 @@
-Web Application Calculator
-
-Features: Basic, HTML events, Error handling, Nested “setTimeout”, DOM Searching, Responsive page
+Calculator Web Application
 
 Languages: JavaScript, HTML, CSS
+
+Topics: Basic, HTML events, Error handling, User interactive, Responsive website, Responsive design, Bootstrap5, Git
 
 ''' This is my very first programming with JavaScript, HTML and CSS, so these codes are very basic and primary.'''
 Here we have a basic web application calculator which has some Math functions such as round, ceil, floor, square root, absolute and exponentiation mathematical operators beside basic calculations which is done by “eval” function.
@@ -12,5 +12,6 @@ This mini project includes more error handling and proper responds to user when 
 So, user has to click on reset button ("C") in order to be able to continue using calculator. Also calculator appearance will look different when buttons are disabled. Buttons opacity will decrease and cursor will be set as "not-allowed" when user hovers the mouse on buttons.
 Note that After user clicks on reset ("C") button to continue calculating, everything will go back to normal and appearance will change accordingly.
 After some updates this project also included responsive page capability for devices with less than 992px and, 576px width.
+There isn't much to say about the "help.html" file, except that it's shared on all web-based projects and, contains information and description related to mentioned project and references to the other projects I did.
 Note: This mini project was completely handled by git.
 Note: Codes documentation and descriptions are more obvious in comments among the codes on each file.
